@@ -1,14 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+
 import HeroImage from './Images/HeroSushiImage.jpg';
 import BottomRightImage from './Images/SushiBottomImage.jpg';
 import BottomLeftImage from './Images/SushiBottomRight.jpg';
 
+import { Modal } from './component/BioModal';
+import {useState} from 'react';
+
 function App() {
+
+  const [showBio, setshowBio] = useState(false);
+
+  const transitionVideo = () => {
+    setshowBio(prev => !prev);
+  };
+
   return (
     <div className="App">
-      <div className="aboutUs">
+      <div onClick={transitionVideo} className="aboutUs">
         Our Story
+      </div>
+      <Modal showBio={showBio} transitionVideo={transitionVideo} setshowBio={setshowBio}/>
+      <div className='loginButton'>
+        <span>Login</span>
       </div>
       <div className="headerOne">Sushi</div>
       <div className="headerTwo">Wave</div>
