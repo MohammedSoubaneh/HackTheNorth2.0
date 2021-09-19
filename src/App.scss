@@ -11,11 +11,18 @@
         font-size: 180px;
         grid-column: 3 / 8;
     }
-    .aboutUs {
-        grid-column: 20 / 24;
+    .headerText {
         position: relative;
         top: 50px;
         font-size: 20px;
+        text-decoration: none;
+        color: black;
+    }
+    .aboutUs {
+        grid-column: 19 / 21;
+    }
+    .signup {
+        grid-column: 21 / 23;
     }
     .imageOne {
         grid-column: 10 / 17;
