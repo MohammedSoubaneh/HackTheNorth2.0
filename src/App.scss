@@ -1,0 +1,33 @@
+.App {
+    display: grid;
+    grid-template-columns: repeat(23, 1fr);
+
+    .headerOne {
+        font-size: 180px;
+        grid-column: 2 / 8;
+    }
+    .headerTwo {
+        line-height: 100px;
+        font-size: 180px;
+        grid-column: 3 / 8;
+    }
+    .aboutUs {
+        grid-column: 20 / 24;
+        position: relative;
+        top: 50px;
+        font-size: 20px;
+    }
+    .imageOne {
+        grid-column: 10 / 17;
+        position: relative;
+        bottom: 2rem;
+    }
+    .imageTwo {
+        grid-column: 19 / 21;
+        position: relative;
+        top: 15rem;
+    }
+    .imageThree {
+        grid-column: 4 / 8;
+    }
+}

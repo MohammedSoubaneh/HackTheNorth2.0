@@ -1,38 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant&family=Roboto&display=swap');
+
 .App {
-  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[23];
+      grid-template-columns: repeat(23, 1fr);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App .headerOne {
+  font-size: 180px;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 6;
+  grid-column: 2 / 8;
+  font-family: 'Cormorant', serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App .headerTwo {
+  line-height: 100px;
+  font-size: 180px;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 5;
+  grid-column: 3 / 8;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App .aboutUs {
+  -ms-grid-column: 20;
+  -ms-grid-column-span: 4;
+  grid-column: 20 / 24;
+  position: relative;
+  top: 50px;
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.App .imageOne {
+  -ms-grid-column: 10;
+  -ms-grid-column-span: 7;
+  grid-column: 10 / 17;
+  position: relative;
+  bottom: 2rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App .imageTwo {
+  -ms-grid-column: 19;
+  -ms-grid-column-span: 2;
+  grid-column: 19 / 21;
+  position: relative;
+  top: 15rem;
 }
+
+.App .imageThree {
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 4;
+  grid-column: 4 / 8;
+}
+/*# sourceMappingURL=App.css.map */
